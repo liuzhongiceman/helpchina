@@ -45,7 +45,7 @@ class Navbar extends Component {
             visible={this.state.visible}
           >
             <LeftMenu />
-            <RightMenu />
+            {/* <RightMenu /> */}
           </Drawer>
         </div>
       </nav>

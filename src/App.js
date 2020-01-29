@@ -3,9 +3,6 @@ import Navbar from "./Components/Navbar";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
 import Home from "./Components/Home/home";
-import Login from "./Components/Login/login";
-import Register from "./Components/Register/register";
-import CreatePost from "./Components/CreatePosts/create_post";
 import ContactUs from "./Components/ContactUs/contact_us";
 
 import { Layout } from "antd";
@@ -21,9 +18,6 @@ class App extends Component {
           <br />
           <Switch>
             <Route exact path="/" render={routeProps => <Home />} />
-            <Route path="/login" render={routeProps => <Login />} />
-            <Route path="/register" render={routeProps => <Register />} />
-            <Route path="/createPost" render={routeProps => <CreatePost />} />
             <Route path="/contactUs" render={routeProps => <ContactUs />} />
           </Switch>
         </BrowserRouter>
@@ -38,7 +32,7 @@ class App extends Component {
             textAlign: "center"
           }}
         >
-          ©2020 技术支持：美国东北大学学生刘忠
+          ©2020 Powered By Zhong Liu
         </Footer>
       </div>
     );
