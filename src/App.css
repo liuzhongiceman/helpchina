@@ -1,0 +1,166 @@
+
+@import '~antd/dist/antd.css';
+.App {
+  margin: 0;
+  padding: 0;
+}
+
+.menuBar{
+  padding: 0 0px;
+  border-bottom: solid 1px #e8e8e8;
+  overflow: auto;
+  box-shadow: 0 0 30px #f3f1f1;
+}
+.logo img{
+  width: 150px;
+  float: left;
+}
+/* .logo a{
+  display: inline-block;
+  font-size: 20px;
+  padding: 19px 20px;
+  text-transform: capitalize;
+} */
+.menuCon{
+  width: calc(100% - 150px);
+  float: left;
+}
+.menuCon .ant-menu-item{
+  padding: 0px 5px;
+}
+.menuCon .ant-menu-submenu-title{
+  padding: 10px 20px;
+}
+.menuCon .ant-menu-item a, .menuCon .ant-menu-submenu-title a{
+  padding: 10px 15px;
+}
+.menuCon .ant-menu-horizontal{
+  border-bottom: none;
+}
+.menuCon .leftMenu{
+  float: left;
+}
+.menuCon .rightMenu{
+  float: right;
+}
+.barsMenu{
+  float: right;
+  height: 32px;
+  padding: 6px;
+  margin-top: 8px;
+  display: none;
+  background: none;
+}
+.barsBtn{
+  display: block;
+  width: 20px;
+  height: 2px;
+  background: #1890ff;
+  position: relative;
+}
+.barsBtn:after,.barsBtn:before{
+  content: attr(x);
+  width: 20px;
+  position: absolute;
+  top: -6px;
+  left: 0;
+  height: 2px;
+  background: #1890ff;
+}
+.barsBtn:after{
+  top: auto;
+  bottom: -6px;
+}
+.ant-drawer-body{
+  padding: 0;
+}
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item, .ant-drawer-body .ant-menu-horizontal > .ant-menu-submenu{
+  display: inline-block;
+  width: 100%;
+}
+.ant-drawer-body .ant-menu-horizontal{
+  border-bottom: none;
+}
+.ant-drawer-body .ant-menu-horizontal > .ant-menu-item:hover{
+  border-bottom-color: transparent;
+}
+
+.messages {
+  width: 95%;
+  margin: 30px auto;
+}
+.message-row {
+  margin: 20px auto;
+}
+
+.message-col {
+  padding: 20px;
+}
+
+
+/* log in form*/
+.login-page {
+  height: 100vh;
+}
+.login-form {
+  margin: 0 auto;
+  max-width: 300px;
+}
+.login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}
+
+/* register form*/
+.register-page {
+  height: 100vh;
+}
+
+.register-form {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+/*create post*/
+.createPost-page {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.createPost{
+  max-width: 600px;;
+  margin: 0 auto;
+}
+
+/*contact us*/
+.aboutMe{
+      display: flex;
+      min-height: 100vh;
+      flex-direction: column;
+}
+
+.aboutMe-content {
+  flex: 1;
+  margin: 320px auto;
+
+}
+
+@media(max-width: 767px){
+  .barsMenu{
+    display: inline-block;
+  }
+  .leftMenu,.rightMenu{
+    display: none;
+  }
+  .logo a{
+    margin-left: -20px;
+  }
+  .menuCon .ant-menu-item, .menuCon .ant-menu-submenu-title{
+    padding: 1px 20px;
+  }
+  .logo a{
+    padding: 10px 20px;
+  }
+}
